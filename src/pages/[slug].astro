@@ -1,6 +1,6 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import keywords from '../../../data/keywords.json' with { type: 'json' };
+import Layout from '../layouts/Layout.astro';
+import keywords from '../../data/keywords.json' with { type: 'json' };
 
 export async function getStaticPaths() {
   return keywords.map(item => ({
