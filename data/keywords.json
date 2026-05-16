@@ -1,0 +1,106 @@
+[
+  {
+    "slug": "best-ai-tool-for-video-editing",
+    "title": "Best AI Tools for Video Editing in 2026",
+    "task": "Video Editing",
+    "category": "Content Creation",
+    "tools": [
+      {
+        "name": "Runway ML",
+        "bestFor": "Professional AI video generation & editing",
+        "pricing": "$15/mo",
+        "rating": 4.8,
+        "description": "Industry-leading AI video editor with green screen, motion tracking, and generative fill.",
+        "pros": ["High-quality output", "Intuitive interface", "Regular updates"],
+        "cons": ["Steeper learning curve", "Export limits on free tier"],
+        "affiliateLink": "https://runwayml.com/?ref=yourid"
+      },
+      {
+        "name": "Descript",
+        "bestFor": "Podcast & video editing via text",
+        "pricing": "$12/mo",
+        "rating": 4.6,
+        "description": "Edit video by editing text. AI removes filler words, clones voices, and generates captions.",
+        "pros": ["Text-based editing", "Great for podcasts", "AI voice cloning"],
+        "cons": ["Limited advanced effects", "Watermark on free plan"],
+        "affiliateLink": "https://descript.com/?ref=yourid"
+      },
+      {
+        "name": "Pictory",
+        "bestFor": "Turning long videos into shorts",
+        "pricing": "$19/mo",
+        "rating": 4.4,
+        "description": "Automatically extracts highlights from long-form content and formats them for TikTok/Reels.",
+        "pros": ["Automated clipping", "Brand templates", "Fast processing"],
+        "cons": ["Less control over cuts", "Basic editing features"],
+        "affiliateLink": "https://pictory.ai/?ref=yourid"
+      }
+    ],
+    "faq": [
+      {
+        "question": "What is the best free AI video editor?",
+        "answer": "CapCut and DaVinci Resolve offer robust free tiers with AI features like auto-captions and background removal."
+      },
+      {
+        "question": "Can AI edit videos automatically?",
+        "answer": "Yes. Tools like Pictory and OpusClip use AI to detect highlights, remove silences, and reframe videos for social media."
+      },
+      {
+        "question": "Is AI video editing worth it for beginners?",
+        "answer": "Absolutely. AI reduces the learning curve by automating complex tasks like color grading, audio sync, and captioning."
+      }
+    ]
+  },
+  {
+    "slug": "best-ai-tool-for-writing-blog-posts",
+    "title": "Best AI Tools for Writing Blog Posts in 2026",
+    "task": "Writing Blog Posts",
+    "category": "Content Creation",
+    "tools": [
+      {
+        "name": "Jasper AI",
+        "bestFor": "Long-form blog content & SEO",
+        "pricing": "$39/mo",
+        "rating": 4.7,
+        "description": "Enterprise-grade AI writer with SEO optimization, brand voice training, and 50+ templates.",
+        "pros": ["High-quality long-form output", "SEO integration", "Team collaboration"],
+        "cons": ["Expensive for solo creators", "Occasional factual errors"],
+        "affiliateLink": "https://jasper.ai/?ref=yourid"
+      },
+      {
+        "name": "Surfer SEO",
+        "bestFor": "SEO-optimized content generation",
+        "pricing": "$89/mo",
+        "rating": 4.5,
+        "description": "Combines AI writing with real-time SEO scoring to rank higher on Google.",
+        "pros": ["Data-driven content", "Keyword optimization", "Content editor"],
+        "cons": ["Higher price point", "Learning curve for SEO metrics"],
+        "affiliateLink": "https://surferseo.com/?ref=yourid"
+      },
+      {
+        "name": "Writesonic",
+        "bestFor": "Budget-friendly blog generation",
+        "pricing": "$12/mo",
+        "rating": 4.3,
+        "description": "Affordable AI writer with blog post templates, fact-checking, and WordPress integration.",
+        "pros": ["Cost-effective", "Fast generation", "Plagiarism checker"],
+        "cons": ["Less nuanced than Jasper", "Limited advanced features"],
+        "affiliateLink": "https://writesonic.com/?ref=yourid"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Can AI write blog posts that rank on Google?",
+        "answer": "Yes, when combined with human editing and SEO tools like Surfer SEO, AI-generated posts can rank competitively."
+      },
+      {
+        "question": "How much does AI blog writing cost?",
+        "answer": "Plans range from $10-$100/mo depending on word count, features, and team seats."
+      },
+      {
+        "question": "Is AI-generated content penalized by Google?",
+        "answer": "No. Google evaluates content quality, not how it's created. Focus on helpful, accurate, and well-structured posts."
+      }
+    ]
+  }
+]

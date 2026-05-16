@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import keywords from '../../data/keywords.json' with { type: 'json' };
+
+const categories = [...new Set(keywords.map(k => k.category))];
+---
+
+<Layout title="Best AI Tools for Every Task - 2026 Directory">
+  <section class="hero">
+    <h1>Find the Best AI Tool for Your Task</h1>
+    <p>Compare features, pricing, and real user reviews across 500+ AI tools.</p>
+  </section>
+
+  <section class="categories">
+    {categories.map(cat => (
+      <div class="category-card">
+        <h2>{cat}</h2>
+        <ul>
+          {keywords
+            .filter(k => k.category === cat)
+            .slice(0, 5)
+            .map(k => (
+              <li><a href={`/${k.slug}/`}>{k.title}</a></li>
+            ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+</Layout>

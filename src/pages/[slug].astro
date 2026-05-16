@@ -1,0 +1,93 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import keywords from '../../../data/keywords.json' with { type: 'json' };
+
+export async function getStaticPaths() {
+  return keywords.map(item => ({
+    params: { slug: item.slug },
+    props: { item }
+  }));
+}
+
+const { item } = Astro.props;
+const description = `Discover the top AI tools for ${item.task.toLowerCase()}. Compare features, pricing, and find the perfect solution for your workflow.`;
+---
+
+<Layout title={item.title} description={description}>
+  <article class="tool-page">
+    <header>
+      <h1>{item.title}</h1>
+      <p class="subtitle">Updated for 2026 | {item.tools.length} Tools Compared</p>
+    </header>
+
+    <div class="ad-slot-top">
+      <!-- Google AdSense / Mediavine Top Ad -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="XXXXXXXXXX"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section class="intro">
+      <p>Finding the right AI tool for <strong>{item.task.toLowerCase()}</strong> can save hours of manual work. We've tested and compared the top solutions based on accuracy, ease of use, pricing, and output quality.</p>
+    </section>
+
+    <section class="comparison-table">
+      <h2>Quick Comparison</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>Best For</th>
+            <th>Pricing</th>
+            <th>Rating</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {item.tools.map((tool, i) => (
+            <tr class={i === 0 ? 'featured' : ''}>
+              <td><strong>{tool.name}</strong></td>
+              <td>{tool.bestFor}</td>
+              <td>{tool.pricing}</td>
+              <td>{'★'.repeat(Math.round(tool.rating))}{'☆'.repeat(5 - Math.round(tool.rating))}</td>
+              <td><a href={tool.affiliateLink} rel="nofollow sponsored" target="_blank" class="btn">Visit Site →</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+
+    <section class="tool-reviews">
+      <h2>Detailed Reviews</h2>
+      {item.tools.map(tool => (
+        <div class="tool-card">
+          <h3>{tool.name}</h3>
+          <p class="tool-desc">{tool.description}</p>
+          <ul class="pros-cons">
+            <li class="pros"><strong>Pros:</strong> {tool.pros.join(', ')}</li>
+            <li class="cons"><strong>Cons:</strong> {tool.cons.join(', ')}</li>
+          </ul>
+          <a href={tool.affiliateLink} rel="nofollow sponsored" target="_blank" class="btn-secondary">Try {tool.name} Free</a>
+        </div>
+      ))}
+    </section>
+
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      {item.faq.map(q => (
+        <details>
+          <summary>{q.question}</summary>
+          <p>{q.answer}</p>
+        </details>
+      ))}
+    </section>
+
+    <div class="ad-slot-bottom">
+      <!-- Google AdSense / Mediavine Bottom Ad -->
+    </div>
+  </article>
+</Layout>
